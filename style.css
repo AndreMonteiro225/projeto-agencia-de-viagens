@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CABEÇALHO */
+
+header {
+    display: flex;
+    align-items: center;
+
+}
+
+header img {
+    margin-left: 23vw;
+    height: 7vh;
+}
+
+header p {
+    font-size: 25px;
+    color: #5d15d1;
+    font-weight: bold;
+}
+
+/* FIM CABEÇALHO */
+
+/* FORMULARIO */
+
+.limita-form {
+    margin: 10px 170px;
+}
+
+.img-fundo {
+    background-image: url("imagens/bahia.jpg");
+    background-size: cover;
+    width: 100%;
+    padding: 50px 0 50px 0;
+}
+
+.cabecalho-form {
+    background-color: #5d15d1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px
+}
+
+.cabecalho-form img {
+    display: flex;
+    height: 30px;
+    padding-right: 20px;
+}
+
+.cabecalho-form p {
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+}
+
+form input,
+select {
+    height: 30px;
+}
+
+form label,
+p {
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+}
+
+.subtitulo-form h3 {
+    margin: 30px;
+    font-size: 30px
+}
+
+.campos-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.campos-form2 {
+    display: flex;
+}
+
+.margem-form {
+    margin: 0 30px 20px 30px;
+}
+
+.campos-horizontal {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.espacamento {
+    margin-left: 20px;
+}
+
+.cama-infantil {
+    line-height: 26px;
+
+}
+
+.cama-infantil-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cama-infantil #cama-infantil-nao {
+    margin-left: 50px;
+
+}
+
+.preferencias-hospedagem p {
+    margin: 15px 0 15px 0;
+
+}
+
+.box-preferencias {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.box-checkbox {
+    margin-right: 25px;
+    align-items: center;
+    display: flex;
+    gap: 4px;
+
+}
+
+.preferencias-hospedagem button {
+    cursor: pointer;
+    color: white;
+    background-color: #5d15d1;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 8px
+}
+
+/* FIM FORMULARIO */
+
+/* OFERTAS */
+
+.limita-secao {
+    margin: 0 170px
+}
+
+.subtitulo-ofertas {
+    margin: 30px 0 30px 10px;
+}
+
+.container-imagens {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-imagem-grande {
+    width: 50%;
+    position: relative;
+}
+
+.container-imagem-grande figcaption {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-weight: bold;
+    color: white;
+    width: 98%;
+    z-index: 1;
+}
+
+.container-imagem-grande::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    height: 10%;
+    opacity: 50%;
+}
+
+.container-imagem-grande img {
+    width: 100%;
+    box-shadow: 2px 2px 20px black;
+
+}
+
+.container-imagens-pequenas {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.container-imagens-pequenas img {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 2px 2px 20px black;
+}
+
+.box-imagens-pequenas {
+    width: calc(100% / 2);
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.box-imagens-pequenas::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    bottom: 15px;
+    width: 95%;
+    height: 2.5vh;
+    opacity: 50%;
+}
+
+.box-imagens-pequenas figcaption {
+    position: absolute;
+    bottom: 15px;
+    z-index: 1;
+    color: white;
+}
+
+/* FIM OFERTAS */
+
+/* NATUREZA */
+
+.container-natureza-img {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+
+
+}
+
+.container-natureza-img figcaption {
+    background-color: white;
+    margin-top: 4px;
+    box-shadow: 1px 1px 5px black;
+}
+
+.container-natureza-img img {
+    width: 35vw;
+    height: 40vh;
+    object-fit: cover;
+    flex: 1 1 auto;
+    box-shadow: 2px 2px 10px black;
+}
+
+/* FIM NATUREZA */
+
+/* RODAPÉ */
+
+footer {
+    background-color: #5d15d1;
+    color: white;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    gap: 50%;
+}
+
+.rodape h3 {
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    text-wrap: nowrap;
+    margin: 15px 0 25px 0;
+
+}
+
+.container-rodape h3 {
+    margin: 15px 0 25px 5vw;
+
+}
+
+
+.rodape .container-rodape,
+.container-rodape2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-wrap: nowrap;
+    margin-bottom: 3vh;
+}
+
+/* FIM RODAPÉ */
+
+@media (max-width: 540px) {
+    .img-fundo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .limita-form {
+        margin: 0
+    }
+
+    .limita-secao {
+        margin: 0;
+    }
+
+    .box-checkbox {
+        text-wrap: nowrap;
+    }
+
+    .rodape {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .container-rodape,
+    .container-rodape2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 3vh;
+    }
+
+    .container-rodape2 h3 {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-rodape h3 {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-imagens {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .container-imagem-grande,
+    .container-imagens-pequenas {
+        width: 100%;
+
+    }
+
+    .container-imagem-grande img,
+    .container-imagens-pequenas img {
+        width: 100%;
+        height: auto;
+    }
+
+    .box-imagens-pequenas {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .container-natureza-img {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container-natureza-img img {
+        width: 100%;
+    }
+
+    .box-natureza-img {
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .img-fundo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .limita-form,
+    .limita-secao {
+        margin: 0
+    }
+
+    .container-imagens {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    
+    .container-imagem-grande,
+    .container-imagens-pequenas {
+        width: 100%;
+        margin: 50px
+    }
+
+    .box-imagens-pequenas {
+        display: flex;
+        flex-wrap: wrap;
+        width: 97vw;
+        justify-content: center;
+        margin: 2vh auto
+    }
+
+    .box-imagens-pequenas img {
+        width: 90vw;
+    }
+
+    .container-natureza-img{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+     
+    }
+    
+    .box-natureza-img img {
+        width: 80vw;
+        height: auto;
+    }
+
+    .rodape {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .container-rodape,
+    .container-rodape2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 3vh;
+    }
+
+    .container-rodape2 h3 {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-rodape h3 {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+}
