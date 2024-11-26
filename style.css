@@ -268,7 +268,7 @@ p {
 /* RODAPÉ */
 
 footer {
-    background-color: #5d15d1;
+    background-color: #1576d1;
     color: white;
 }
 
@@ -282,9 +282,8 @@ footer {
     font-weight: bold;
     font-size: 30px;
     display: flex;
-    text-wrap: nowrap;
+    white-space: nowrap;
     margin: 15px 0 25px 0;
-
 }
 
 .container-rodape h3 {
@@ -293,12 +292,12 @@ footer {
 }
 
 
-.rodape .container-rodape,
+.rodape .container-rodape, .rodape
 .container-rodape2 {
     display: flex;
     flex-direction: column;
     text-align: center;
-    text-wrap: nowrap;
+    white-space: nowrap;
     margin-bottom: 3vh;
 }
 
@@ -319,7 +318,7 @@ footer {
     }
 
     .box-checkbox {
-        text-wrap: nowrap;
+        white-space: nowrap;
     }
 
     .rodape {
@@ -346,12 +345,12 @@ footer {
     .container-rodape h3 {
         text-align: center;
         display: flex;
-        justify-content: center;
     }
 
     .container-imagens {
         display: flex;
         flex-wrap: wrap;
+        justify-self: center;
     }
 
 
@@ -386,6 +385,8 @@ footer {
     .box-natureza-img {
         width: 100%;
     }
+
+
 }
 
 @media (max-width:768px) {
